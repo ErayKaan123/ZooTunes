@@ -1,3 +1,4 @@
+@layout GetStartedLayout
 @page "/"
 
 <MudStack Row Justify="Justify.Center" Class="mt-12">
@@ -15,10 +16,10 @@
 </div>
 
 <MudStack Class="mt-64" Justify="Justify.Center" Spacing="6" Row="true">
-    <button class="bg-white text-black font-bold py-4 px-12 rounded-full shadow-lg hover:bg-gray-200 text-lg">
+    <MudButton Href="home" class="bg-white text-black font-bold py-4 px-12 rounded-full shadow-lg hover:bg-gray-200 text-lg">
         Jetzt Loslegen!
-    </button>    
-    <MudLink Href="about" Typo="Typo.subtitle1" Underline="Underline.Always" Class="mt-4 text-gray-300  underline text-lg">
+    </MudButton>    
+    <MudLink Href="/getstarted-about-us" Typo="Typo.subtitle1" Underline="Underline.Always" Class="mt-4 text-gray-300  underline text-lg">
         Über uns
     </MudLink>
 </MudStack>
