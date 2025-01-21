@@ -1,5 +1,8 @@
 @layout GetStartedLayout
+@inject ISnackbar Snackbar
+@inject ClipboardService Clipboard
 @page "/getstarted-about-us"
+@using ZooTunes.Client.Services
 
 <MudIconButton Href="/" Icon="@Icons.Material.Filled.ArrowBack"></MudIconButton>
 
@@ -21,7 +24,21 @@
 </MudText>
 
 <MudStack Row="true" Justify="Justify.Center" Class="mt-12">
-    <button class="bg-white text-black font-bold py-4 px-12 rounded-full shadow-lg hover:bg-gray-200 text-lg">
+    <button @onclick="HandleContactUs" class="bg-white text-black font-bold py-4 px-12 rounded-full shadow-lg hover:bg-gray-200 text-lg">
         Kontaktiere uns
     </button>
 </MudStack>
+
+@code {
+
+    private async Task HandleContactUs()
+    {
+        await Clipboard.CopyTextToClipboard("ZooTunes@teams.com");
+        ShowMessage("Unsere Email wurde erfolgreich in die Zwischenablage kopiert.", Severity.Success);
+    }
+    private void ShowMessage(string message, Severity severity)
+    {
+        Snackbar.Add(message, severity);
+    }
+
+}
