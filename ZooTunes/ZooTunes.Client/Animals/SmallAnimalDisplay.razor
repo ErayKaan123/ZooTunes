@@ -1,0 +1,14 @@
+<h3>SmallAnimalDisplay</h3>
+<img src="@AnimalData.Image"/>
+<audio controls="">
+    @foreach (var sound in AnimalData.Sounds)
+    {
+        <source
+            src="@sound.Key"
+            type="@sound.Value">
+    }
+    Your browser does not support the audio element.
+</audio>
+@code {
+    
+}
