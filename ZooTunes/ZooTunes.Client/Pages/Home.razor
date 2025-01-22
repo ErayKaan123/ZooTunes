@@ -1,6 +1,8 @@
 ﻿@page "/home"
 @using ZooTunes.Client.Animals
 
+
+<MudImage Class="mb-12" Src="images/logo.png" Height="110" Width="110"></MudImage>
 @foreach (var animalDataSet in data)
 {
     <SmallAnimalDisplay AnimalData="animalDataSet" />
