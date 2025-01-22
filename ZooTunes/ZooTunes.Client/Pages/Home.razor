@@ -1,2 +1,21 @@
 ﻿@page "/home"
-<MudText>Hello World</MudText>
+
+<MudImage Width="110" Height="110" Src="images/logo.png"></MudImage>
+
+<MudCarousel Class="mud-width-full" Style="height:100%;"  TData="object">
+    <MudCarouselItem Color="@Color.Inherit">
+        <div class="d-flex" style="height:100%">
+            <MudImage Src="elephant"></MudImage>
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem Color="@Color.Secondary">
+        <div class="d-flex" style="height:100%">
+            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Size="@Size.Large" />
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem>
+        <div class="d-flex" style="height:100%">
+            <MudIcon Class="mx-auto my-auto" Icon="@Icons.Custom.Brands.MudBlazor" Color="@Color.Primary" Size="@Size.Large" />
+        </div>
+    </MudCarouselItem>
+</MudCarousel>
