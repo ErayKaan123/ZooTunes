@@ -1,0 +1,25 @@
+@page "/DetailAnimal"
+@using System.Reflection
+@using ZooTunes.Client.Animals
+<DynamicComponent Type="dynamicComponentType" Parameters="dynamicParameters" />
+
+@code {
+    private Type? dynamicComponentType;
+    private Dictionary<string, object>? dynamicParameters;
+
+    protected override void OnInitialized()
+    {
+        Assembly asm = typeof(Pig).Assembly;
+        dynamicComponentType = asm.GetType("ZooTunes.Client.Animals." + Animal); // Replace with your component type
+        dynamicParameters = new Dictionary<string, object>
+        {
+            //{ "Parameter1", "Value1" },
+            //{ "Parameter2", 42 }
+        };
+    }
+}
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string? Animal { get; set; }
+}
