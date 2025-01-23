@@ -1,6 +1,5 @@
-﻿@page "/home"
+@page "/home"
 @using ZooTunes.Client.Animals
-
 
 <MudImage Class="mb-4" Src="images/logo.png" Height="110" Width="110"></MudImage>
 @foreach (var animalDataSet in data)
@@ -24,8 +23,11 @@
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/lion_2.wav?version=1_201811134822", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/lion_2.mp3?version=1_201811134817", "audio/mp3" }
-                }, scientificName: "Panthera leo", isFavorite: false, description: "<DIALOG>"),
-
+                },
+                scientificName: "Panthera leo",
+                isFavorite: false,
+                description: "The African lion cub is a playful and curious member of the Panthera leo species."
+            ),
 
             new AnimalData(
                 "Asian Elephant",
@@ -34,8 +36,11 @@
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/elephant.wav?version=1_201811134825", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/elephant.mp3?version=1_201811134820", "audio/mp3" }
-                }),
-
+                },
+                scientificName: "Elephas maximus",
+                isFavorite: true,
+                description: "The Asian elephant is known for its intelligence and strong social bonds."
+            ),
 
             new AnimalData(
                 "Bald Eagle",
@@ -44,8 +49,11 @@
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/bald-eagle_2.wav?version=1_201811134821", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/bald-eagle_2.mp3?version=1_201811134822", "audio/mp3" }
-                }),
-
+                },
+                scientificName: "Haliaeetus leucocephalus",
+                isFavorite: false,
+                description: "The bald eagle, a symbol of freedom, is found across North America."
+            ),
 
             new AnimalData(
                 "Bear",
@@ -54,8 +62,11 @@
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/bear.wav?version=1_201811134817", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/bear.mp3?version=1_201811134823", "audio/mp3" }
-                }),
-
+                },
+                scientificName: "Ursidae",
+                isFavorite: true,
+                description: "Bears are powerful mammals found in diverse habitats around the world."
+            ),
 
             new AnimalData(
                 "Beluga Whale",
