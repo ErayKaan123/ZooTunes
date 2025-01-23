@@ -2,21 +2,53 @@
 @using ZooTunes.Client.Animals
 
 <MudImage Class="mb-4" Src="images/logo.png" Height="110" Width="110"></MudImage>
-@foreach (var animalDataSet in data)
+
+<MudTextField @bind-Value="searchQuery" 
+              Placeholder="Search for an animal..." 
+              Class="mb-4 search-bar" 
+              Adornment="Adornment.Start" 
+              AdornmentIcon="@Icons.Material.Filled.Search" 
+              Clearable="true" 
+              Immediate="true" 
+              OnAdornmentClick="SearchAnimals" 
+              OnKeyDown="HandleKeyDown"
+              OnClearButtonClick="ResetSearch">
+</MudTextField>
+
+@foreach (var animalDataSet in filteredData)
 {
-    <SmallAnimalDisplay AnimalData="animalDataSet"/>
+    <SmallAnimalDisplay AnimalData="animalDataSet" />
 }
 
-@code{
-
+@code {
     List<AnimalData> data { get; set; }
+    List<AnimalData> filteredData { get; set; }
+    string searchQuery { get; set; } = "";
 
     protected override void OnInitialized()
     {
         data = AnimalDataRepository.Data;
-        StateHasChanged();
+        filteredData = data; // Initialize to show all animals
     }
 
-}
+    void SearchAnimals()
+    {
+        filteredData = string.IsNullOrWhiteSpace(searchQuery)
+            ? data // Show all animals if the search query is empty
+            : data.Where(a => a.AnimalName.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)).ToList();
+    }
 
+    void ResetSearch()
+    {
+        searchQuery = string.Empty; // Clear the search query
+        filteredData = data;       // Reset to show all animals
+    }
+
+    void HandleKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter") // Check if the pressed key is "Enter"
+        {
+            SearchAnimals();
+        }
+    }
 }
