@@ -13,7 +13,6 @@
 
     protected override void OnInitialized()
     {
-        StateHasChanged();
         data =
         [
             new AnimalData(
@@ -336,6 +335,7 @@
                 description: "Description"
                 )
         ];
+        StateHasChanged();
     }
 
 }
