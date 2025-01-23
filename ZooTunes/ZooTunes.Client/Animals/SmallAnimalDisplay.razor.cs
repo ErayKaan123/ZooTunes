@@ -7,4 +7,10 @@ public partial class SmallAnimalDisplay : ComponentBase
     [Parameter]
     [EditorRequired]
     public required AnimalData AnimalData { get; set; }
+
+    private void ToggleFavorite()
+    {
+        AnimalData.IsFavorite = !AnimalData.IsFavorite;
+        StateHasChanged();
+    }
 }
