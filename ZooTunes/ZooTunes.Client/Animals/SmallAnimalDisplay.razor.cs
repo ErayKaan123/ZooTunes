@@ -17,6 +17,6 @@ public partial class SmallAnimalDisplay : ComponentBase
     public async Task OpenAnimalDescription()
     {
         var parameters = new DialogParameters<DescriptionDialog> { { x => x.Content, AnimalData.Description } };
-        await dialogService.ShowAsync<DescriptionDialog>("Descriiption", parameters: parameters);
+        await dialogService.ShowAsync<DescriptionDialog>("Description", parameters: parameters);
     }
 }
