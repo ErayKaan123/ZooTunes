@@ -1,6 +1,6 @@
 @page "/favorites"
 @using ZooTunes.Client.Animals
-@foreach (var animal in AnimalDataRepositorie.data.Where(x => x.IsFavorite))
+@foreach (var animal in AnimalDataRepository.Data.Where(x => x.IsFavorite))
 {
     <SmallAnimalDisplay AnimalData="animal" />
 }

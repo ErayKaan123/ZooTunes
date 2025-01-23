@@ -11,6 +11,8 @@ public partial class SmallAnimalDisplay : ComponentBase
     private void ToggleFavorite()
     {
         AnimalData.IsFavorite = !AnimalData.IsFavorite;
+        var result = AnimalData.IsFavorite ? "The animal is now a favorite" : "The animal is not a favorite anymore";
+        snackbar.Add(result, Severity.Success);     
         StateHasChanged();
     }
 

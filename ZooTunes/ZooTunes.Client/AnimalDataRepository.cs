@@ -2,9 +2,9 @@ using ZooTunes.Client.Animals;
 
 namespace ZooTunes.Client;
 
-public class AnimalDataRepositorie
+public static class AnimalDataRepository
 {
-    public static List<AnimalData> data  =
+    public static List<AnimalData> Data  =
         [
             new AnimalData(
                 "African Lion Cub",
