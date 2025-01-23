@@ -2,8 +2,11 @@
 @using ZooTunes.Client.Animals
 @foreach (var animal in AnimalDataRepository.Data.Where(x => x.IsFavorite))
 {
-    <SmallAnimalDisplay AnimalData="animal" />
+    <SmallAnimalDisplay AnimalData="animal" OnStateChanged="HandleStateChanged"/>
 }
 @code{
-
+    private void HandleStateChanged()
+    {
+        StateHasChanged();
+    }
 }
