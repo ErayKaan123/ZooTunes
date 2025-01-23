@@ -15,17 +15,17 @@
 </MudText>
 
 <MudText Align="Align.Center" Typo="Typo.body1" Class="mt-4 bg-gradient-to-r from-gray-50 to-[#999999] text-transparent bg-clip-text">
-    Wir sind ein engagiertes Team, das mit <b>ZooTunes</b> die Tierwelt auf eine neue, spannende Weise erlebbar macht. Unsere App bietet authentische Tiergeräusche aus Zoos, die du entdecken und zu deinen Favoriten hinzufügen kannst.
-    Warum ZooTunes?
-    Lernen und Spaß: Spielerisch die Tierwelt entdecken.
-    Authentische Sounds: Geräusche von Tieren aus aller Welt.
-    Deine Favoriten: Speichere deine Lieblingstiere und höre sie jederzeit.
-    Mit ZooTunes wird der Zoo mobil – überall und jederzeit!
+    We are a dedicated team that uses <b>ZooTunes</b> to bring the animal world to life in a new and exciting way. Our app offers authentic animal sounds from zoos that you can discover and add to your favorites.
+    Why ZooTunes?
+    Learning and fun: Playfully discover the animal world.
+    Authentic sounds: Sounds of animals from all over the world.
+    Your favorites: Save your favorite animals and listen to them anytime.
+    ZooTunes makes the zoo mobile - anywhere and anytime!
 </MudText>
 
 <MudStack Row="true" Justify="Justify.Center" Class="mt-12">
     <button @onclick="HandleContactUs" class="bg-white text-black font-bold py-4 px-12 rounded-full shadow-lg hover:bg-gray-200 text-lg">
-        Kontaktiere uns
+        Contact us
     </button>
 </MudStack>
 
@@ -36,6 +36,7 @@
         await Clipboard.CopyTextToClipboard("ZooTunes@teams.com");
         ShowMessage("Unsere Email wurde erfolgreich in die Zwischenablage kopiert.", Severity.Success);
     }
+
     private void ShowMessage(string message, Severity severity)
     {
         Snackbar.Add(message, severity);

@@ -1,3 +1,4 @@
+@inject IDialogService dialogService
 <MudStack Class="mx-4 mb-24" Justify="Justify.Center">
     <MudImage Class="rounded-lg mb-1" Src="@AnimalData.Image"/>
     <MudGrid>
@@ -9,7 +10,7 @@
         <MudItem xs="5" md="5">
             <MudStack Spacing="0" Class="mt-n2" Row="true">
                 <MudIconButton OnClick="ToggleFavorite" Size="Size.Large" Color="@(AnimalData.IsFavorite ? Color.Inherit : Color.Error)" Icon="@Icons.Material.Filled.Favorite"/>
-                <MudIconButton Size="Size.Large" Color="Color.Inherit" Icon="@Icons.Material.Filled.Info"/>
+                <MudIconButton OnClick="OpenAnimalDescription" Size="Size.Large" Color="Color.Inherit" Icon="@Icons.Material.Filled.Info"/>
             </MudStack>
         </MudItem>
     </MudGrid>
