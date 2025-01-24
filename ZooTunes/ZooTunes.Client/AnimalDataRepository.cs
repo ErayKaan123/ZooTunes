@@ -64,7 +64,11 @@ public static class AnimalDataRepository
                 new Dictionary<string, string>
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/beluga-whale-001.mp3?version=1_201811135223", "audio/mp3" }
-                }),
+                },
+                scientificName: "Delphinapterus leucas",
+                isFavorite: false,
+                description: "The beluga whale is a white, sociable marine mammal known for its distinctive rounded forehead and vocal abilities."
+            ),
 
 
             new AnimalData(
@@ -74,7 +78,11 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/bengal_tiger.wav?version=1_201811134825", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/bengal_tiger.mp3?version=1_201811134819", "audio/mp3" }
-                }),
+                },
+                scientificName: "Panthera tigris tigris",
+                isFavorite: true,
+                description: "The Bengal tiger is a large, striped predator native to the Indian subcontinent."
+            ),
 
 
             new AnimalData(
@@ -84,7 +92,11 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/bottlenose-dolphin/sound_dolphin_buzzing_clicks_ogg.ogg?version=1_201811061118", "audio/ogg" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/bottlenose-dolphin/sound_dolphin_buzzing_clicks_mp3.mp3?version=1_201811061117", "audio/mp3" }
-                }),
+                },
+                scientificName: "Tursiops truncatus",
+                isFavorite: false,
+                description: "The bottlenose dolphin is an intelligent, social marine mammal known for its sleek body and playful behavior."
+            ),
 
 
             new AnimalData(
@@ -94,7 +106,11 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/sea_lion.wav?version=1_201811134816", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/sea_lion.mp3?version=1_201811134826", "audio/mp3" }
-                }),
+                },
+                scientificName: "Zalophus californianuss",
+                isFavorite: false,
+                description: "The California sea lion is a fast, agile marine mammal known for its playful nature and loud barks."
+            ),
 
 
             new AnimalData(
@@ -104,7 +120,11 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/chimp.wav?version=1_201811134826", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/chimp.mp3?version=1_201811134822", "audio/mp3" }
-                }),
+                },
+                scientificName: "Pan troglodytes",
+                isFavorite: false,
+                description: "The chimpanzee is an intelligent primate known for its complex social behavior and problem-solving abilities."
+            ),
 
 
             new AnimalData(
@@ -114,17 +134,26 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/panther.wav?version=1_201811134823", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/panther.mp3?version=1_201811134817", "audio/mp3" }
-                }),
+                },
+                scientificName: "Puma concolor",
+                isFavorite: false,
+                description: "The cougar is a large, solitary wild cat known for its strength, agility, and adaptability across various habitats."
+            ),
 
 
             new AnimalData(
-                "DromedaryCamel",
+                "Dromedary Camel",
                 "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/dromedary_camel_357x229.jpg?h=229&w=357&la=en&hash=8C4E3E743BCEC48265E7F77ABEAED2E5",
                 new Dictionary<string, string>
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/camel.wav?version=1_201811134822", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/camel.mp3?version=1_201811134821", "audio/mp3" }
-                }),
+                },
+                scientificName: "Camelus dromedarius",
+                isFavorite: true,
+                description: "The dromedary camel is a desert animal known for its endurance and single hump."
+            ),
+
 
 
             new AnimalData(
@@ -134,8 +163,11 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/eagle_1.wav?version=1_201811134821", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/eagle_1.mp3?version=1_201811134821", "audio/mp3" }
-                }),
-
+                },
+                scientificName: "Haliaeetus leucocephalus",
+                isFavorite: true,
+                description: "The eagle is a powerful bird of prey with sharp vision and strong wings."
+            ),
 
             new AnimalData(
                 "Falcon",
@@ -144,8 +176,11 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/falcon.wav?version=1_201811134818", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/falcon.mp3?version=1_201811134824", "audio/mp3" }
-                }),
-
+                },
+                scientificName: "Falco peregrinus",
+                isFavorite: false,
+                description: "The falcon is a fast-flying bird known for its hunting skills."
+            ),
 
             new AnimalData(
                 "Florida Panther",
@@ -154,8 +189,11 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/cougar.wav?version=1_201811134824", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/cougar.mp3?version=1_201811134819", "audio/mp3" }
-                }),
-
+                },
+                scientificName: "Puma concolor coryi",
+                isFavorite: true,
+                description: "The Florida panther is a rare big cat known for its agility and stealth."
+            ),
 
             new AnimalData(
                 "Frog",
@@ -164,18 +202,24 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/frog.wav?version=1_201811134824", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/frog.mp3?version=1_201811134820", "audio/mp3" }
-                }),
-
+                },
+                scientificName: "Lithobates catesbeianus",
+                isFavorite: false,
+                description: "The frog is an amphibian known for its jumping ability and croaking sound."
+            ),
 
             new AnimalData(
-                "Giant Anteater",
+            "Giant Anteater",
                 "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/giant_anteater_357x229.jpg?h=229&w=357&la=en&hash=285D31026D48ACB07EA3236B6CC3E8F3",
                 new Dictionary<string, string>
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/anteater.wav?version=1_201811134818", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/anteater.mp3?version=1_201811134825", "audio/mp3" }
-                }),
-
+                },
+                scientificName: "Myrmecophaga tridactyla",
+                isFavorite: true,
+                description: "The giant anteater is a unique mammal known for its long snout and tongue."
+            ),
 
             new AnimalData(
                 "Gibbon",
@@ -184,102 +228,11 @@ public static class AnimalDataRepository
                 {
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/gibbon.wav?version=1_201811134820", "audio/wav" },
                     { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/gibbon.mp3?version=1_201811134820", "audio/mp3" }
-                }),
+                },
+                scientificName: "Hylobates lar",
+                isFavorite: false,
+                description: "The gibbon is an agile primate known for its loud calls and tree-swinging skills."
+            )
 
-
-            new AnimalData(
-                "Gray Wolf",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/gray_wolf_357x229.jpg?h=229&w=357&la=en&hash=491313F9B34AD99E6E0C6A45696A0F8F",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/wolf.wav?version=1_201811134820", "audio/wav" },
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/wolf.mp3?version=1_201811134825", "audio/mp3" }
-                }),
-
-
-            new AnimalData(
-                "Harbor Seal",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/harbor_seal_357x229.jpg?h=229&w=357&la=en&hash=CE897F5F47228259BA939DAA9E080C1E",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/harbor-seal-001.mp3?version=1_201811132301", "audio/mp3" }
-                }),
-
-
-            new AnimalData(
-                "Hippopotamus",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/bgt-animals/2017_buschgardenstampabay_animals_hippos4_357x229.jpg?h=229&w=357&la=en&hash=29492431CB3CC3C886E747FA6D1654AE",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/hippo.wav?version=1_201811134823", "audio/wav" },
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/hippo.mp3?version=1_201811134818", "audio/mp3" }
-                }),
-
-
-            new AnimalData(
-                "Horse",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/infobooks/clydesdales/listing-images/clydesdale_37x229.jpg?h=229&w=357&la=en&hash=0C5E7E2B07B05C1C304B9F12ABECCC92",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/clydesdale.mp3?version=1_201811130506", "audio/mp3" }
-                }),
-
-
-            new AnimalData(
-                "Jaguar",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/jaguar_357x229.jpg?h=229&w=357&la=en&hash=CC00BF9399BF6296D1C28B661BA54056",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/jaguar.wav?version=1_201811134817", "audio/wav" },
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/jaguar.mp3?version=1_201811134823", "audio/mp3" }
-                }),
-
-
-            new AnimalData(
-                "Killer Whale",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/infobooks/killer-whales/listing-images/killer_whales_357x229.jpg?h=229&w=357&la=en&hash=86A2512B16F18B41E95F360D5A169119",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/killer-whale.mp3?version=1_201811132749", "audio/mp3" }
-                }),
-
-
-            new AnimalData(
-                "Leopard",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/landing-pages/animal-sounds/leopard_357x229.jpg?h=229&w=357&la=en&hash=D9512FDBF1B715F3E765424196CEA961",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/leopard.wav?version=1_201811134824", "audio/wav" },
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/leopard.mp3?version=1_201811134819", "audio/mp3" }
-                }),
-
-
-            new AnimalData(
-                "Lowland Gorilla",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/bgt-animals/2017_buschgardenstampabay_animals_gorillas4_357x229.jpg?h=229&w=357&la=en&hash=32DF6366A292D9A0F9762A7A0876419E",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/gorilla2.wav?version=1_201811134826", "audio/wav" },
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/gorilla.mp3?version=1_201811134818", "audio/mp3" }
-                }),
-
-
-            new AnimalData(
-                "Penguin",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/birds/penguin-tour-listing.jpg?h=229&w=357&la=en&hash=25A50C5B4DE1D502BB621783B1E5A08D",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/penguin.mp3?version=1_201811133822", "audio/mp3" }
-                }),
-
-
-            new AnimalData(
-                "Pig",
-                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/pot_bellied_pig_357x229.jpg?h=229&w=357&la=en&hash=C95AB99248F12C8BE3655268D9242148",
-                new Dictionary<string, string>
-                {
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/pig.wav?version=1_201811134818", "audio/wav" },
-                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/pig.mp3?version=1_201811134823", "audio/mp3" }
-                })
         ];
 }
