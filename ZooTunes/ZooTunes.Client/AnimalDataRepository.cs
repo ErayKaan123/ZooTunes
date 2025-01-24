@@ -232,6 +232,122 @@ public static class AnimalDataRepository
                 scientificName: "Hylobates lar",
                 isFavorite: false,
                 description: "The gibbon is an agile primate known for its loud calls and tree-swinging skills."
+            ), 
+            new AnimalData(
+                "Gray Wolf",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/gray_wolf_357x229.jpg?h=229&w=357&la=en&hash=491313F9B34AD99E6E0C6A45696A0F8F",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/wolf.wav?version=1_201811134820", "audio/wav" },
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/wolf.mp3?version=1_201811134825", "audio/mp3" }
+                },
+                scientificName: "Canis lupus",
+                isFavorite: false,
+                description: "The gray wolf is a powerful pack hunter known for its teamwork and endurance."
+            ),
+            new AnimalData(
+                "Harbor Seal",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/harbor_seal_357x229.jpg?h=229&w=357&la=en&hash=CE897F5F47228259BA939DAA9E080C1E",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/harbor-seal-001.mp3?version=1_201811132301", "audio/mp3" }
+                },
+                scientificName: "Phoca vitulina",
+                isFavorite: true,
+                description: "The harbor seal is a sleek marine mammal known for its agility in water."
+            ),
+            new AnimalData(
+                "Hippopotamus",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/bgt-animals/2017_buschgardenstampabay_animals_hippos4_357x229.jpg?h=229&w=357&la=en&hash=29492431CB3CC3C886E747FA6D1654AE",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/hippo.wav?version=1_201811134823", "audio/wav" },
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/hippo.mp3?version=1_201811134818", "audio/mp3" }
+                },
+                scientificName: "Hippopotamus amphibius",
+                isFavorite: false,
+                description: "The hippopotamus is a large, semi-aquatic mammal known for its strength."
+            ),
+            new AnimalData(
+                "Horse",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/infobooks/clydesdales/listing-images/clydesdale_37x229.jpg?h=229&w=357&la=en&hash=0C5E7E2B07B05C1C304B9F12ABECCC92",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/clydesdale.mp3?version=1_201811130506", "audio/mp3" }
+                },
+                scientificName: "Equus ferus caballus",
+                isFavorite: true,
+                description: "The horse is a strong and fast mammal domesticated for riding and work."
+            ),
+            new AnimalData(
+                "Jaguar",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/jaguar_357x229.jpg?h=229&w=357&la=en&hash=CC00BF9399BF6296D1C28B661BA54056",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/jaguar.wav?version=1_201811134817", "audio/wav" },
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/jaguar.mp3?version=1_201811134823", "audio/mp3" }
+                },
+                scientificName: "Panthera onca",
+                isFavorite: false,
+                description: "The jaguar is a powerful and stealthy big cat known for its strength and agility."
+            ),
+            new AnimalData(
+                "Killer Whale",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/infobooks/killer-whales/listing-images/killer_whales_357x229.jpg?h=229&w=357&la=en&hash=86A2512B16F18B41E95F360D5A169119",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/killer-whale.mp3?version=1_201811132749", "audio/mp3" }
+                },
+                scientificName: "Orcinus orca",
+                isFavorite: true,
+                description: "The killer whale is an apex predator known for its intelligence and teamwork."
+            ),
+            new AnimalData(
+                "Leopard",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/landing-pages/animal-sounds/leopard_357x229.jpg?h=229&w=357&la=en&hash=D9512FDBF1B715F3E765424196CEA961",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/leopard.wav?version=1_201811134824", "audio/wav" },
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/leopard.mp3?version=1_201811134819", "audio/mp3" }
+                },
+                scientificName: "Panthera pardus",
+                isFavorite: false,
+                description: "The leopard is a stealthy predator known for its speed and climbing ability."
+            ),
+            new AnimalData(
+                "Lowland Gorilla",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/bgt-animals/2017_buschgardenstampabay_animals_gorillas4_357x229.jpg?h=229&w=357&la=en&hash=32DF6366A292D9A0F9762A7A0876419E",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/gorilla2.wav?version=1_201811134826", "audio/wav" },
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/gorilla.mp3?version=1_201811134818", "audio/mp3" }
+                },
+                scientificName: "Gorilla gorilla gorilla",
+                isFavorite: true,
+                description: "The lowland gorilla is a strong and intelligent primate native to African forests."
+            ),
+            new AnimalData(
+                "Penguin",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/birds/penguin-tour-listing.jpg?h=229&w=357&la=en&hash=25A50C5B4DE1D502BB621783B1E5A08D",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/penguin.mp3?version=1_201811133822", "audio/mp3" }
+                },
+                scientificName: "Spheniscidae",
+                isFavorite: false,
+                description: "Penguins are flightless birds adapted for life in the water and cold climates."
+            ),
+            new AnimalData(
+                "Pig",
+                "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/animal-bytes/listing-images/mammals/pot_bellied_pig_357x229.jpg?h=229&w=357&la=en&hash=C95AB99248F12C8BE3655268D9242148",
+                new Dictionary<string, string>
+                {
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/pig.wav?version=1_201811134818", "audio/wav" },
+                    { "https://seaworld.org/-/media/migrated-media/seaworld-dotorg/audio-files/sound-library/pig.mp3?version=1_201811134823", "audio/mp3" }
+                },
+                scientificName: "Sus scrofa domesticus",
+                isFavorite: true,
+                description: "The pig is a highly intelligent and social farm animal."
             )
 
         ];
