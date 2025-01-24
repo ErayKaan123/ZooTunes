@@ -1,11 +1,13 @@
 @page "/home"
 @using ZooTunes.Client.Animals
-
-<MudImage Class="mb-4" Src="images/logo.png" Height="110" Width="110"></MudImage>
+<div style="height: fit-content" class="flex justify-start items-center bg-black text-white py-2 px-4 fixed top-0 left-0 w-full z-100">
+    <MudImage Src="images/logo.png" Height="70" Width="70"></MudImage>
+    <h1 onfocus="blur()" class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white ml-5">Browse animals</h1>
+</div>
 
 <MudTextField @bind-Value="searchQuery" 
               Placeholder="Search for an animal..." 
-              Class="mb-4 search-bar" 
+              Class="mb-4 mt-14 search-bar" 
               Adornment="Adornment.Start" 
               AdornmentIcon="@Icons.Material.Filled.Search" 
               Clearable="true" 
